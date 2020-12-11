@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="waiting">Esperando respuesta...</string>
+    <string name="catage">\"Tu edad gatuna es de %d años\"</string>
+    <string name="resultintodb">Almacenando resultado en la BD</string>
+    <string name="toastage">Debes insertar tu edad</string>
+    <string name="agexml">¿Cuantos años tienes?</string>
+    <string name="tu_edad">Tu edad</string>
+    <string name="calculate">Calcular</string>
+</resources>

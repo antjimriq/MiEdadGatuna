@@ -1,50 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity"
-    android:background="#FDFD96"
-    android:gravity="center_horizontal">
-    <ImageView
-        android:id="@+id/imagen"
-        android:scaleType="fitXY"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/cute_cat"
-        android:adjustViewBounds="true"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="¿Cuantos años tienes?"
-        android:fontFamily="sans-serif-light"
-        android:paddingBottom="10dp"
-        android:paddingTop="10dp"
-        android:textSize="25sp"
-        android:textColor="@android:color/holo_purple" />
-    <EditText
-        android:id="@+id/Cuestion"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Tu edad"/>
-    <TextView
-        android:id="@+id/Resultado"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="16dp"
-        android:gravity=""
-        android:textColor="@android:color/black"
-        tools:text="Tu edad gatuna es de 140 años"/>
-    <Button
-        android:id="@+id/Boton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="20dp"
-        android:backgroundTint="#E0BBE4"
-        android:layout_marginStart="50dp"
-        android:layout_marginEnd="50dp"
-        android:layout_marginBottom="1dp"
-        android:layout_marginTop="5dp"
-        android:text="Calcular"/>
-</LinearLayout>
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity"
+        android:background="#FDFD96"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/imagen"
+            android:scaleType="fitXY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cute_cat"
+            android:adjustViewBounds="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/agexml"
+            android:fontFamily="sans-serif-light"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:textSize="25sp"
+            android:textColor="@android:color/holo_purple" />
+
+        <EditText
+            android:id="@+id/Cuestion"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/tu_edad" />
+
+        <TextView
+            android:id="@+id/Resultado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:gravity=""
+            android:textColor="@android:color/black"
+            tools:text="Tu edad gatuna es de 140 años" />
+
+        <Button
+            android:id="@+id/Boton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:backgroundTint="#E0BBE4"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="1dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/calculate" />
+    </LinearLayout>
+</layout>

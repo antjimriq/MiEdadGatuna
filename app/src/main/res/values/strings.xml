@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">MiEdadGatuna</string>
+    <string name="app_name" translatable="false">MiEdadGatuna</string>
+    <string name="waiting">Waiting for an answer</string>
+    <string name="catage">\"Your cat age is %d años\"</string>
+    <string name="resultintodb">Storing answer in our database</string>
+    <string name="toastage">Insert your age</string>
+    <string name="agexml">How old are you?</string>
+    <string name="tu_edad">Your age</string>
+    <string name="calculate">Calculate</string>
 </resources>
